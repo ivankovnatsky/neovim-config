@@ -11,6 +11,7 @@ This is a customized [LazyVim](https://github.com/LazyVim/LazyVim) configuration
 - **Sync Command:** Run `windows-config\neovim\sync.ps1`
 
 ### Workflow:
+
 1. Edit configs in `windows-config\neovim\config\`
 2. Run `windows-config\neovim\sync.ps1` to sync changes
 3. Test in Neovim
