@@ -90,7 +90,7 @@ end, {
 
 -- Telescope aliases (fzf.vim muscle memory)
 vim.api.nvim_create_user_command("Files", function()
-  vim.cmd("Telescope find_files")
+  require("telescope.builtin").find_files()
 end, {
   desc = "Find files using Telescope",
   bang = true,
@@ -98,7 +98,7 @@ end, {
 })
 
 vim.api.nvim_create_user_command("Buffers", function()
-  vim.cmd("Telescope buffers")
+  require("telescope.builtin").buffers()
 end, {
   desc = "List buffers using Telescope",
   bang = true,
@@ -106,7 +106,7 @@ end, {
 })
 
 vim.api.nvim_create_user_command("Registers", function()
-  vim.cmd("Telescope registers")
+  require("telescope.builtin").registers()
 end, {
   desc = "List registers using Telescope",
   bang = true,
@@ -114,7 +114,7 @@ end, {
 })
 
 vim.api.nvim_create_user_command("GFiles", function()
-  vim.cmd("Telescope git_files")
+  require("telescope.builtin").git_files()
 end, {
   desc = "Find git files using Telescope",
   bang = true,
@@ -122,7 +122,7 @@ end, {
 })
 
 vim.api.nvim_create_user_command("OFiles", function()
-  vim.cmd("Telescope oldfiles")
+  require("telescope.builtin").oldfiles()
 end, {
   desc = "Find recently opened files using Telescope",
   bang = true,
@@ -144,7 +144,7 @@ end, {
 })
 
 vim.api.nvim_create_user_command("RG", function()
-  vim.cmd("Telescope live_grep")
+  require("telescope.builtin").live_grep()
 end, {
   desc = "Search using ripgrep (dynamic)",
   bang = true,
